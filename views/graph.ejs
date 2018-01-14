@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>My Graph</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="./../public/css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="./../public/images/favicon.ico"/>
+	</head>
+	<body>
+		<%
+			let usersGraphList = [
+				{
+					username: "First User",
+					email: "firstemail@gmail.com"
+				},
+				{
+					username: "Second User",
+					email: "secondemail@gmail.com"
+				},
+				{
+					username: "Third User",
+					email: "thirdemail@gmail.com"
+				},
+				{
+					username: "Fourth User",
+					email: "fourthemail@gmail.com"
+				},
+				{
+					username: "Fifth User",
+					email: "fifthemail@gmail.com"
+				},
+				{
+					username: "Sixth User",
+					email: "sixthemail@gmail.com"
+				},
+				{
+					username: "Seventh User",
+					email: "seventhemail@gmail.com"
+				},
+				{
+					username: "Eighth User",
+					email: "eighthemail@gmail.com"
+				},
+				{
+					username: "Ninth User",
+					email: "ninthemail@gmail.com"
+				},
+				{
+					username: "Tenth User",
+					email: "tenthemail@gmail.com"
+				}
+			];
+		%>
+		<div class="graph_design_three"></div>
+		<div class="graph_design_four"></div>
+		<div class="graph_default_list_place">
+			<div class="graph_default_list">
+				<% for(let ix = 0; ix <= 10; ++ix) { %>
+					<div class="graph_default_list_blocks">
+						<%= ix%>
+					</div>
+				<% } %>
+			</div>
+		</div>
+		<div class="graph_list_place">
+			<% for(var newData of data) { %>
+				<p class="graph_names"><%= newData.username %></p>
+			<% } %>
+		</div>
+	</body>
+</html>

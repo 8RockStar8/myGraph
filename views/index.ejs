@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title><%= title%></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="./../public/css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="./../public/images/favicon.ico"/>
+
+		<script src="./../public/js/jquery.js"></script>
+		<script src="./../public/js/init.js"></script>
+	</head>
+	<body>
+		<div class="graph_design_one"></div>
+		<div class="reg_place">
+			<form action="/newData" method="post" class="form">
+				<input type="text" name="username" placeholder="Enter Your Name" class="form_inp_name" />
+				<input type="email" name="email" placeholder="Entar Your E-mail" class="form_inp_email" />
+				<button type="submit" class="reg_btn">sing up</button>
+			</form>
+		</div>
+	</body>
+</html>
